@@ -1096,8 +1096,8 @@ CREATE TABLE `wp_options` (
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost/cdhfurniture', 'yes'),
 (2, 'home', 'http://localhost/cdhfurniture', 'yes'),
-(3, 'blogname', 'woo', 'yes'),
-(4, 'blogdescription', 'Just another WordPress site', 'yes'),
+(3, 'blogname', 'CDHFurniture', 'yes'),
+(4, 'blogdescription', 'Welcome', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
 (6, 'admin_email', 'lekimtrang10@yahoo.com', 'yes'),
 (7, 'start_of_week', '1', 'yes'),
