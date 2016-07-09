@@ -415,7 +415,7 @@ a {
 /*===================================================================================*/
 /* viet customized - viettest*/
 .wpb_revslider_element.wpb_content_element {
- margin-top: 0px !important;
+  margin-top: 0px !important;
 }
 .main-header .site-branding{
   margin-left: 20px;
@@ -429,14 +429,18 @@ a {
 	  top: -20px !important;}
   .main-header .site-branding {
     margin-left: -20px;
+    margin-top: 20px !important;
   }
   .main-header .main-header-content {
     z-index: 22;
   }
   #primary > main > div.hero {
     top: -48px !important;
-    left: -48% !important;
+    left: -54% !important;
   }
+}
+div.single-product-row > div.gallery-holder > div > a {
+	border: none;
 }
 
 .top-bar {
@@ -680,15 +684,16 @@ a {
 /*	SINGLE-PRODUCT-TABS
 /*===================================================================================*/
 .woocommerce-tabs {
-  margin-left: -15px;
+  margin-left: -100px;
   margin-right: -15px;
-  padding-bottom: 62px; }
+  padding-bottom: 0px; }
   .woocommerce-tabs:before, .woocommerce-tabs:after {
     content: " ";
     display: table; }
   .woocommerce-tabs:after {
     clear: both; }
   .woocommerce-tabs .tabs {
+    height: 10px;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -774,7 +779,7 @@ a {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid #f2f2f2;
+    /* border: 1px solid #f2f2f2; */
     padding: 25px; }
     @media (min-width: 1200px) {
       .woocommerce-tabs .panel.wc-tab {
@@ -4833,7 +4838,7 @@ ul.products.columns-6 .product:focus .action-buttons .yith-wcwl-wishlistaddrespo
 
 .inner-xs {
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 6px; }
 
 .inner-vs {
   padding-top: 50px;
@@ -6995,9 +7000,10 @@ form.login .form-row label.inline {
 /*	PAGE SINGLE PRODUCT
 /*===================================================================================*/
 .single-product .single-product-row {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-bottom: 50px; }
+  margin-left: -100px;
+  margin-right: 0px;
+  padding-top: 30px;
+  padding-bottom: 0px; }
   .single-product .single-product-row:before, .single-product .single-product-row:after {
     content: " ";
     display: table; }
