@@ -722,6 +722,7 @@ div.single-product-row > div.gallery-holder > div > a {
         float: left;
         width: 25%; } }
     .woocommerce-tabs .tabs > li {
+      display: none;
       float: none; }
       .woocommerce-tabs .tabs > li > a {
         border-bottom: 1px solid #dddddd;
