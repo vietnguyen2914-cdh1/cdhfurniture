@@ -413,8 +413,27 @@ a {
 /*===================================================================================*/
 /*	HEADER
 /*===================================================================================*/
+/* viet customized */
+.wpb_revslider_element.wpb_content_element {
+ margin-top: 0px !important;
+}
+.main-header .site-branding{
+  margin-left: 20px;
+}
+@media (min-width: 992px) {
+  .top-bar {
+    left: 64px !important;}
+  .main-header {
+	  top: -20px !important;}
+  .main-header .site-branding {
+    margin-left: -20px;
+  }
+}
+
 .top-bar {
-  background: #f7f7f7;
+	position: absolute;
+	z-index: 23;
+  /*background: #f7f7f7;*/
   padding: 10px 0 9px;
   font-size: 13px;
   line-height: 20px; }
@@ -424,7 +443,7 @@ a {
       display: inline-block;
       line-height: 14px;
       padding: 3px 12px;
-      border-left: 1px solid #e2e2e2; }
+      /*border-left: 1px solid #e2e2e2; */ }
       .top-bar .quick-links > li:first-child {
         border-left: none; }
       .top-bar .quick-links > li a {
@@ -469,8 +488,10 @@ a {
           background: transparent; }
       .top-bar .switchers > li:first-child {
         border-left: none; }
-
+  
 .main-header {
+	z-index: 22;
+	left: -15px !important;
   padding: 35px 0 30px; }
   .main-header .main-header-content {
     margin-left: -15px;

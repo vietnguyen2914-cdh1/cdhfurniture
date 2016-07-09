@@ -5,12 +5,12 @@
  * @package unicase
  */
 
+/**
+ * Display Site Branding
+ * @since  1.0.0
+ * @return void
+ */
 if ( ! function_exists( 'unicase_site_branding' ) ) {
-	/**
-	 * Display Site Branding
-	 * @since  1.0.0
-	 * @return void
-	 */
 	function unicase_site_branding() {
 		ob_start();
 		if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
@@ -26,14 +26,16 @@ if ( ! function_exists( 'unicase_site_branding' ) ) {
 	}
 }
 
-if ( ! function_exists( 'unicase_primary_navigation' ) ) {
+
 	/**
 	 * Display Primary Navigation
 	 * @since  1.0.0
 	 * @return void
 	 */
+if ( ! function_exists( 'unicase_primary_navigation' ) ) {
 	function unicase_primary_navigation() {
 		?>
+    <!-- 
 		<nav id="site-navigation" class="main-navigation navbar yamm" aria-label="<?php esc_attr_e( 'Primary Navigation', 'unicase' ); ?>">
 			<div class="container">
 				<div class="navbar-header">
@@ -45,7 +47,7 @@ if ( ! function_exists( 'unicase_primary_navigation' ) ) {
 					</button>
 				</div>
                 
-                <div class="nav-bg-class">
+        <div class="nav-bg-class">
 					<div class="collapse navbar-collapse" id="uc-horizontal-menu-collapse">
 						<div class="nav-outer">
 							<?php 
@@ -62,10 +64,10 @@ if ( ! function_exists( 'unicase_primary_navigation' ) ) {
 							?>
 						</div>
 						<div class="clearfix"></div>
-					</div><!-- /.navbar-collapse -->
+					</div>
 				</div>
-			</div><!-- /.container -->
-		</nav><!-- #site-navigation -->
+			</div>
+		</nav> -->
 		<?php
 	}
 }
@@ -198,13 +200,7 @@ if( ! function_exists( 'unicase_get_header_style' ) ) {
 if ( ! function_exists( 'unicase_header_cart' ) ) {
 	function unicase_header_cart() {
 		?>
-		<div class="top-cart-row">
-			<?php
-				if( is_woocommerce_activated() ) {
-					unicase_display_mini_cart();
-				}
-			?>
-		</div>
+		<!-- <div class="top-cart-row"><?php //if( is_woocommerce_activated() ) { unicase_display_mini_cart(); } ?></div> -->
 		<?php
 	}
 }
@@ -236,10 +232,10 @@ if ( ! function_exists( 'unicase_header_contact_info' ) ) {
 if ( ! function_exists( 'unicase_top_search_holder' ) ) {
 	function unicase_top_search_holder() {
 		?>
-		<div class="top-search-holder">
-			<?php unicase_header_contact_info(); ?>
-			<?php unicase_search_bar(); ?>
-		</div>
+		<!-- <div class="top-search-holder">
+			<?php //unicase_header_contact_info(); ?>
+			<?php //unicase_search_bar(); ?>
+		</div> -->
 		<?php
 	}
 }
