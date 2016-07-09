@@ -1407,14 +1407,13 @@ if ( ! function_exists( 'woocommerce_checkout_login_form' ) ) {
 	}
 }
 
+/**
+ * Output the WooCommerce Breadcrumb.
+ * @param array $args
+ */
 if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
-
-	/**
-	 * Output the WooCommerce Breadcrumb.
-	 *
-	 * @param array $args
-	 */
 	function woocommerce_breadcrumb( $args = array() ) {
+	  /*
 		$args = wp_parse_args( $args, apply_filters( 'woocommerce_breadcrumb_defaults', array(
 			'delimiter'   => '&nbsp;&#47;&nbsp;',
 			'wrap_before' => '<nav class="woocommerce-breadcrumb" ' . ( is_single() ? 'itemprop="breadcrumb"' : '' ) . '>',
@@ -1433,6 +1432,7 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 		$args['breadcrumb'] = $breadcrumbs->generate();
 
 		wc_get_template( 'global/breadcrumb.php', $args );
+		*/
 	}
 }
 

@@ -422,11 +422,19 @@ a {
 }
 @media (min-width: 992px) {
   .top-bar {
+	  position: absolute;
+    z-index: 23;
     left: 64px !important;}
   .main-header {
 	  top: -20px !important;}
   .main-header .site-branding {
     margin-left: -20px;
+  }
+  .main-header .main-header-content {
+    z-index: 22;
+  }
+  #primary > main > div.hero {
+    top: -48px !important;}
   }
 }
 
@@ -4326,7 +4334,7 @@ ul.products.columns-6 .product:focus .action-buttons .yith-wcwl-wishlistaddrespo
   padding: 0;
   border-bottom: 1px solid #F2F2F2;
   margin: auto;
-  padding: 20px 0 10px;
+  padding: 45px 0px 0px 10px;
   text-align: left;
   font-size: 13px;
   line-height: 22px; }
