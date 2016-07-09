@@ -413,7 +413,7 @@ a {
 /*===================================================================================*/
 /*	HEADER
 /*===================================================================================*/
-/* viet customized */
+/* viet customized - viettest*/
 .wpb_revslider_element.wpb_content_element {
  margin-top: 0px !important;
 }
@@ -434,7 +434,8 @@ a {
     z-index: 22;
   }
   #primary > main > div.hero {
-    top: -48px !important;}
+    top: -48px !important;
+    left: -48% !important;
   }
 }
 
