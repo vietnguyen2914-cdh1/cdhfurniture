@@ -19,7 +19,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site wrapper">
+<!-- <div id="page" class="hfeed site wrapper"> -->
+<div id="page">
 	<?php
 	do_action( 'unicase_before_header' ); ?>
 	<!-- ============================================================= HEADER ============================================================= -->
