@@ -955,6 +955,9 @@ div.single-product-row > div.gallery-holder > div > a {
 /*===================================================================================*/
 /*	SHOP-TAB
 /*===================================================================================*/
+.tab-content {
+	padding-left: 24px;
+}
 .tab-content #grid-view,
 .tab-content #list-view {
   border-bottom: 1px solid #ececec;
