@@ -15,7 +15,7 @@ extract( $args );
 
 <div class="<?php echo esc_attr( apply_filters( 'unicase_container_classes', 'container' ) ); ?>">
 	<div class="row">
-		<div id="primary" class="<?php echo esc_attr( apply_filters( 'unicase_content_area_classes', 'content-area' ) ); ?>">
+		<div id="primary" class="content-area <?php //echo esc_attr( apply_filters( 'unicase_content_area_classes', 'content-area' ) ); ?>">
 			<main class="<?php echo esc_attr( apply_filters( 'unicase_site_main_classes', 'site-main' ) ); ?>">
 				<?php echo $main_content; ?>
 			</main>
