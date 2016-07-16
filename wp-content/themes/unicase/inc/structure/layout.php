@@ -36,7 +36,7 @@ if( ! function_exists( 'unicase_get_page_layout_args' ) ) {
 					'layout' 				=> 'layout-sidebar',
 					'page_name'				=> 'woocommerce-single-product',
 					'site_content_classes'	=> '',
-					'container_classes'		=> 'container inner-xs ',
+					'container_classes'		=> 'container_classes2 ',//container inner-xs '
 					'content_area_classes'	=> 'col-sm-12 col-md-12 col-lg-9 col-lg-push-3',
 					'sidebar_area_classes'	=> 'col-sm-12 col-md-12 col-lg-3 col-lg-pull-9',
 					'site_main_classes'		=> $style,
@@ -48,7 +48,7 @@ if( ! function_exists( 'unicase_get_page_layout_args' ) ) {
 					'layout'				=> 'layout-sidebar',
 					'page_name'				=> 'shop-page',
 					'site_content_classes'	=> '',
-					'container_classes'		=> 'container inner-xs ',
+					'container_classes'		=> 'container_classes2 ',//container inner-xs '
 					'content_area_classes'	=> 'col-sm-12 col-md-9 col-md-push-3 col-lg-9 col-lg-push-3',
 					'sidebar_area_classes'	=> 'col-sm-12 col-md-3 col-lg-3 col-md-pull-9 col-lg-pull-9',
 					'site_main_classes'		=> '',
@@ -74,7 +74,7 @@ if( ! function_exists( 'unicase_get_page_layout_args' ) ) {
 					'layout'				=> 'layout-sidebar',
 					'page_name'				=> 'product-category-page',
 					'site_content_classes'	=> '',
-					'container_classes'		=> 'container inner-xs ',
+					'container_classes'		=> 'container_classes2 ',//container inner-xs '
 					'content_area_classes'	=> 'col-sm-12 col-md-9 col-md-push-3 col-lg-9 col-lg-push-3',
 					'sidebar_area_classes'	=> 'col-sm-12 col-md-3 col-lg-3 col-md-pull-9 col-lg-pull-9',
 					'site_main_classes'		=> '',

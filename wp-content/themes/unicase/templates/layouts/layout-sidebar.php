@@ -20,8 +20,9 @@ extract( $args );
 				<?php echo $main_content; ?>
 			</main>
 		</div>
-		<aside id="secondary" class="<?php echo esc_attr( apply_filters( 'unicase_sidebar_area_classes', 'sidebar-area widget-area' ) ); ?>">
-			<?php do_action( $sidebar_action ); ?>
-		</aside>
+    <!-- 
+		<aside id="secondary" class="<?php //echo esc_attr( apply_filters( 'unicase_sidebar_area_classes', 'sidebar-area widget-area' ) ); ?>">
+			<?php //do_action( $sidebar_action ); ?>
+		</aside> -->
 	</div>
 </div>

@@ -74,6 +74,10 @@ if ( ! function_exists( 'unicase_header_cart' ) ) {
  */
 if ( ! function_exists( 'unicase_sorting_top_wrapper' ) ) {
 	function unicase_sorting_top_wrapper() {
+	  //viettest fixing sidebar
+	  echo '<div class="row" ><div id="main_content-left" class="col-md-3">';
+	  do_action( 'unicase_shop_sidebar' );
+	  echo '</div><div id="main_content-right" class="col-md-9">';
 		echo '<div class="control-bar control-bar-top clearfix">';
 	}
 }

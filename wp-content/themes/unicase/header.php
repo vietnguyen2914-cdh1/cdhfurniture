@@ -48,6 +48,4 @@
 
 	<div id="content" class="<?php echo esc_attr( apply_filters( 'unicase_site_content_classes', 'site-content' ) ); ?>" tabindex="-1">
 
-		<?php
-
-		do_action( 'unicase_content_top' ); ?>
+		<?php do_action( 'unicase_content_top' ); ?>
