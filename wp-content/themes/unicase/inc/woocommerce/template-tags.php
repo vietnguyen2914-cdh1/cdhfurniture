@@ -245,6 +245,36 @@ if ( ! function_exists( 'unicase_template_single_price' ) ) {
 	}
 }
 
+
+/*
+ Plugin Name: WooCommerce Show Dimensions On Archive
+Description: Display product dimensions on archive pages, right below the title of the product.
+Version: 1.0
+Author: Coen Jacobs
+Author URI: http://coenjacobs.me
+*/
+add_action( 'woocommerce_after_shop_loop_item_title', 'cj_show_dimensions', 9 );
+function cj_show_dimensions() {
+  global $product;
+  $dimensions = $product->get_dimensions();
+  $weight = $product->get_weight();
+  ?>
+  <table class="shop_attributes">
+  <tbody><tr class="">
+  <th>Weight</th>
+  <td class="product_weight"><?php echo $weight . kg ?></td>
+  </tr>
+  <tr class="alt">
+  <th>Dimensions</th>
+  <td class="product_dimensions"><?php echo $dimensions ?></td>
+  </tr>
+  </tbody></table>
+
+<?php
+}
+
+
+
 if( ! function_exists( 'unicase_stock_html' ) ) {
 	function unicase_stock_html( $stock_html ){
 		if( !empty( $stock_html ) ) :
@@ -254,9 +284,10 @@ if( ! function_exists( 'unicase_stock_html' ) ) {
 				<span class="label"><?php echo esc_html__( 'Availability:', 'unicase' ); ?></span>
 				<?php echo wp_kses_post( $stock_html ); ?>
 			</div>
-			<?php
+<?php
 			$stock_html = ob_get_clean();
 		endif;
+		cj_show_dimensions();
 		return $stock_html;
 	}
 }
